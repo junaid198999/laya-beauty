@@ -31,44 +31,23 @@ export default function Home() {
       <SiteHeader />
 
       <main id="top">
-        {/* Hero - native 16:9 frame, no overlay; image already leaves room for copy */}
+        {/* Hero banner - all copy is baked into the image; scales by height, no crop */}
         <section className="bg-cream pt-[4.25rem] sm:pt-20">
-          <div className="relative aspect-[16/9] w-full overflow-hidden">
+          <Link
+            href="#collection"
+            className="block w-full"
+            aria-label="Laya Glow Trio - Shop the collection"
+          >
             <Image
-              src="/brand/hero-glow-trio.jpg"
-              alt="Laya Glow Trio - Glass Lip Oil, Dew Flush, and Light Drop"
-              fill
+              src="/brand/hero-glow-trio-v2.jpg"
+              alt="Your everyday glow, refined. Three effortless essentials for lips, cheeks, and light. Shop the collection."
+              width={1024}
+              height={576}
               priority
-              className="object-cover object-center"
+              className="h-auto w-full"
               sizes="100vw"
             />
-            <div className="absolute inset-0 z-10 flex items-center px-5 sm:px-8 lg:px-16">
-              <div className="mx-auto w-full max-w-6xl">
-                <div className="max-w-[42%] sm:max-w-md">
-                  <p className="animate-fade-up text-xs tracking-[0.28em] text-brand uppercase">
-                    Laya Glow Trio
-                  </p>
-                  <h1 className="animate-fade-up delay-1 mt-2 font-display text-2xl font-medium leading-tight tracking-wide text-ink sm:mt-3 sm:text-4xl md:text-5xl lg:text-6xl">
-                    Lip. Flush. Light.
-                  </h1>
-                  <p className="animate-fade-up delay-2 mt-2 text-sm leading-relaxed text-ink/70 sm:mt-4 sm:text-base md:text-lg">
-                    Three finishes. One glow. Made simple.
-                  </p>
-                  <div className="animate-fade-up delay-3 mt-4 flex flex-col items-start gap-2 sm:mt-8 sm:flex-row sm:items-center sm:gap-6">
-                    <Link
-                      href="#collection"
-                      className="inline-flex items-center bg-brand px-5 py-2.5 text-xs tracking-[0.16em] text-white uppercase transition-colors duration-300 hover:bg-brand-deep sm:px-7 sm:py-3.5 sm:text-sm"
-                    >
-                      Meet the collection
-                    </Link>
-                    <span className="text-[10px] tracking-[0.14em] text-ink/45 uppercase sm:text-xs">
-                      Coming soon on Amazon US
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </Link>
         </section>
 
         {/* Story beat — desire, conflict, turn */}
