@@ -7,7 +7,9 @@
   --lavender: #d8cde0;
   --lavender-soft: #e8e0ec;
   --tint: #f3eef6;
-  --cream: #faf7fb;
+  --cream: #f9f4f0;
+  --peach: #e5a193;
+  --champagne: #e8d5b5;
   --surface: #ffffff;
   --background: var(--cream);
   --foreground: var(--ink);
@@ -23,6 +25,8 @@
   --color-lavender-soft: var(--lavender-soft);
   --color-tint: var(--tint);
   --color-cream: var(--cream);
+  --color-peach: var(--peach);
+  --color-champagne: var(--champagne);
   --color-surface: var(--surface);
   --font-sans: var(--font-outfit);
   --font-display: var(--font-cormorant);

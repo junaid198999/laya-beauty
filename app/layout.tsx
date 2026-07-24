@@ -18,42 +18,45 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL("https://laya-beauty.com"),
   title: {
-    default: "Laya Beauty",
+    default: "Laya Beauty · Glow Trio",
     template: "%s · Laya Beauty",
   },
   description:
-    "Laya Beauty — Happiness in every drop. Beauty Oil for nail & cuticle care, crafted with 100% natural oils.",
+    "Laya Beauty — LAYA GLOW TRIO. Glass Lip Oil, Dew Flush, and Light Drop. Lip. Flush. Light. Coming soon on Amazon US.",
   keywords: [
     "Laya Beauty",
-    "Beauty Oil",
-    "nail oil",
-    "cuticle care",
-    "natural oils",
+    "Glow Trio",
+    "Glass Lip Oil",
+    "Dew Flush",
+    "Light Drop",
+    "liquid blush",
+    "lip oil",
+    "highlighter",
   ],
   authors: [{ name: "Laya Beauty" }],
   openGraph: {
-    title: "Laya Beauty",
+    title: "Laya Beauty · Glow Trio",
     description:
-      "Beauty Oil for nail & cuticle care. 100% natural oils. Happiness in every drop.",
+      "Three finishes. One glow. Glass Lip Oil, Dew Flush, Light Drop — coming soon on Amazon US.",
     url: "https://laya-beauty.com",
     siteName: "Laya Beauty",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/brand/logo.png",
-        width: 2000,
-        height: 1147,
-        alt: "Laya Beauty logo",
+        url: "/brand/og.jpg",
+        width: 1024,
+        height: 539,
+        alt: "Laya Beauty Glow Trio - Three essentials. One effortless glow.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Laya Beauty",
+    title: "Laya Beauty · Glow Trio",
     description:
-      "Beauty Oil for nail & cuticle care. 100% natural oils. Happiness in every drop.",
-    images: ["/brand/logo.png"],
+      "Three finishes. One glow. Glass Lip Oil, Dew Flush, Light Drop.",
+    images: ["/brand/og.jpg"],
   },
   icons: {
     icon: "/brand/icon.png",
